@@ -1,0 +1,76 @@
+.header {
+    background-color: teal;
+    grid-area: header;
+}
+
+.nav {
+    background-color: pink;
+    grid-area: nav;
+}
+
+.main {
+    background-color: orange;
+    grid-area: main;
+    display: grid;
+}
+
+.aside {
+    background-color: green;
+    grid-area: aside;
+}
+
+.footer {
+    background-color: blue;
+    grid-area: footer;
+}
+
+.grid {
+    height: 100vh;
+    margin: 0%;
+    display: grid;
+    row-gap: 0.25em;
+    column-gap: 0.25em;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 18fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "nav main aside"
+    "footer footer footer"
+
+}
+
+
+@media only screen and (max-width:768px){
+    .grid {
+        height: 100vh;
+        margin: 0%;
+        display: grid;
+        row-gap: 0.5em;
+        column-gap: 0.5em;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+        "header"
+        "main"
+        "aside"
+        "footer";
+
+    }
+    .nav{display: none;}
+
+}
+
+.caja1 {
+    background-color: aqua;
+
+}
+
+.caja2 {
+    background-color: pink;
+
+}
+
+
+.caja3 {
+    background-color: crimson;
+}
