@@ -1,0 +1,2 @@
+git branch /* veo las ramas que tengo */
+
