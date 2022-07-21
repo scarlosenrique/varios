@@ -1,0 +1,4 @@
+# Ignora archivo 
+pragmaticplay.html
+
+# Ignora la carpeta node_modules
